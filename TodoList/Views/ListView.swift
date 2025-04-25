@@ -13,19 +13,27 @@ struct ListView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
-        List{
-            ForEach(listViewModel.todoItems){ todoItem in
-                ListRowView(item: todoItem)
-                    .onTapGesture {
-                        withAnimation(.linear){
-                            listViewModel.updateItem(item: todoItem)
-                        }
+        ZStack{
+            if listViewModel.todoItems.isEmpty{
+                NoItemsView()
+                    .transition(AnyTransition.opacity.animation(.easeIn))
+            }else{
+                List{
+                    ForEach(listViewModel.todoItems){ todoItem in
+                        ListRowView(item: todoItem)
+                            .onTapGesture {
+                                withAnimation(.linear){
+                                    listViewModel.updateItem(item: todoItem)
+                                }
+                            }
                     }
+                    .onDelete(perform:listViewModel.deleteItems)
+                    .onMove(perform: listViewModel.moveItem)
+                }
+                .listStyle(PlainListStyle())
+                
             }
-            .onDelete(perform:listViewModel.deleteItems)
-            .onMove(perform: listViewModel.moveItem)
         }
-        .listStyle(PlainListStyle())
         .navigationTitle(Text("Todo List 📝"))
         .navigationBarItems(
             leading: EditButton(),
