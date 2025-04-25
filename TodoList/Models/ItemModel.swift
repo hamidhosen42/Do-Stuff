@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemModel : Identifiable {
+struct ItemModel : Identifiable, Codable {
     var id: String
     var title: String
     var isDone: Bool = false
