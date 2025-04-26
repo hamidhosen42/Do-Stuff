@@ -40,6 +40,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FB56AF612DBCA7F000F13CBF /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .github;
+			sourceTree = "<group>";
+		};
 		FB8038352DBB24E600227912 /* TodoList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -93,6 +98,7 @@
 		FB80382A2DBB24E600227912 = {
 			isa = PBXGroup;
 			children = (
+				FB56AF612DBCA7F000F13CBF /* .github */,
 				FBE913C82DBC69190093A133 /* AppImage */,
 				FB8038352DBB24E600227912 /* TodoList */,
 				FB8038462DBB24E700227912 /* TodoListTests */,
@@ -127,6 +133,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				FB56AF612DBCA7F000F13CBF /* .github */,
 				FB8038352DBB24E600227912 /* TodoList */,
 				FBE913C82DBC69190093A133 /* AppImage */,
 			);
