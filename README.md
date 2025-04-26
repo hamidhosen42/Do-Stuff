@@ -28,12 +28,12 @@ A simple and clean productivity app built with **SwiftUI + MVVM**, allowing user
 
 | Description | Preview |
 |------------|---------|
-| **Launch Screen** | ![Launch Screen](./AppImage/Launch%20Screen%20with%20Checkmark.png) |
-| **Empty List** | ![Empty List](./AppImage/Empty%20Todo%20List%20screen.png) |
-| **Add Task** | ![Add Item](./AppImage/Add%20New%20Item%20screen.png) |
-| **Task List (Edit Mode)** | ![Edit Mode](./AppImage/Todo%20List%20(in%20edit%20mode).png) |
-| **Swipe to Delete** | ![Delete Item](./AppImage/Swipe%20to%20Delete.png) |
-| **Tasks Marked Complete** | ![Checked Tasks](./AppImage/List%20with%20Checked%20Tasks.png) |
+| **Launch Screen** | <img src="./AppImage/Launch%20Screen%20with%20Checkmark.png" width="250"/> |
+| **Empty List** | <img src="./AppImage/Empty%20Todo%20List%20screen.png" width="250"/> |
+| **Add Task** | <img src="./AppImage/Add%20New%20Item%20screen.png" width="250"/> |
+| **Task List (Edit Mode)** | <img src="./AppImage/Todo%20List%20(in%20edit%20mode).png" width="250"/> |
+| **Swipe to Delete** | <img src="./AppImage/Swipe%20to%20Delete.png" width="250"/> |
+| **Tasks Marked Complete** | <img src="./AppImage/List%20with%20Checked%20Tasks.png" width="250"/> |
 
 ---
 
