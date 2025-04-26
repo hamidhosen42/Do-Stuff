@@ -7,7 +7,7 @@
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.TodoList</string> <!-- Change this to your Bundle ID -->
+    <string>com.yourcompany.TodoList</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -20,10 +20,25 @@
     <string>1</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
+    
+    <!-- Fixed Launch Screen -->
     <key>UILaunchScreen</key>
-    <dict/>
+    <dict>
+        <key>BackgroundColor</key>
+        <dict>
+            <key>Red</key>
+            <real>1</real>
+            <key>Green</key>
+            <real>1</real>
+            <key>Blue</key>
+            <real>1</real>
+            <key>Alpha</key>
+            <real>1</real>
+        </dict>
+    </dict>
+    
     <key>UIMainStoryboardFile</key>
-    <string></string> <!-- Leave empty for SwiftUI -->
+    <string></string>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
         <string>armv7</string>
