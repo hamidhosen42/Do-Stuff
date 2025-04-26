@@ -2,14 +2,13 @@ fastlane_version '2.157'
 default_platform :ios
 
 platform :ios do
-    
-    platform :ios do
-        desc 'Builds project and executes unit tests'
-        lane :unit_test do |options|
-          scan(
-            clean: options[:clean],
-            skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
-          )
-        end
-    end
+  desc 'Builds project and executes unit tests'
+  lane :unit_test do
+    scan(
+      scheme: "TodoList",                          # << Your app's Xcode scheme
+      clean: true,
+      skip_package_dependencies_resolution: true,
+      device: "iPhone 14"
+    )
+  end
 end
