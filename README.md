@@ -1,4 +1,4 @@
-# ✅ Todo List App 📝
+# ✅ Do Stuff App 📝
 
 A simple and clean productivity app built with **SwiftUI + MVVM**, allowing users to easily manage their daily tasks.
 
