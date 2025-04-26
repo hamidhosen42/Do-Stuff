@@ -27,6 +27,9 @@ struct TodoListApp: App {
             NavigationView{
                 ListView()
             }
+            .navigationViewStyle(
+                StackNavigationViewStyle()//Responsive device
+            )
             .environmentObject(listViewModel)
         }
     }

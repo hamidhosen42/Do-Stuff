@@ -47,6 +47,7 @@ struct NoItemsView: View {
                 .scaleEffect(animation ? 1.1 : 1.0)
                 .offset(y:animation ? -7 : 0)
             }
+            .frame(maxWidth: 400)
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)

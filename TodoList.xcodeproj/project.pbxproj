@@ -45,6 +45,11 @@
 			path = TodoListUITests;
 			sourceTree = "<group>";
 		};
+		FBE913C82DBC69190093A133 /* AppImage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AppImage;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		FB80382A2DBB24E600227912 = {
 			isa = PBXGroup;
 			children = (
+				FBE913C82DBC69190093A133 /* AppImage */,
 				FB8038352DBB24E600227912 /* TodoList */,
 				FB8038462DBB24E700227912 /* TodoListTests */,
 				FB8038502DBB24E700227912 /* TodoListUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FB8038352DBB24E600227912 /* TodoList */,
+				FBE913C82DBC69190093A133 /* AppImage */,
 			);
 			name = TodoList;
 			packageProductDependencies = (
