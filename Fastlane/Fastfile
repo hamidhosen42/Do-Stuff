@@ -5,10 +5,14 @@ platform :ios do
   desc 'Builds project and executes unit tests'
   lane :unit_test do
     scan(
-      scheme: "TodoList",                          # << Your app's Xcode scheme
+      workspace: "TodoList.xcodeproj/project.xcworkspace",
+      scheme: "TodoList",
+      device: "iPhone 14",
       clean: true,
-      skip_package_dependencies_resolution: true,
-      device: "iPhone 14"
+      code_coverage: true,
+      derived_data_path: "Build/",
+      prelaunch_simulator: true,
+      xcargs: "-parallelizeTargets"
     )
   end
 end

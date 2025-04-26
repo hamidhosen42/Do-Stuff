@@ -11,7 +11,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
@@ -23,18 +24,21 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      - name: Swift Packages Cache
+      - name: Cache Swift Packages
         uses: actions/cache@v3
-        id: cache
         with:
           path: |
             ~/Library/Developer/Xcode/DerivedData
             ~/Library/Caches/org.swift.swiftpm
-          key: ${{ runner.os }}-deps-v1-${{ hashFiles('TodoList.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          restore-keys: ${{ runner.os }}-deps-v1-
+          key: ${{ runner.os }}-spm-${{ hashFiles('TodoList.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
 
-      - name: Install Fastlane
-        run: brew install fastlane
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install Fastlane & Gems
+        run: bundle install
 
       - name: Run Unit Tests
-        run: fastlane unit_test
+        run: bundle exec fastlane unit_test

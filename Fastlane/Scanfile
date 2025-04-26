@@ -1,8 +1,8 @@
-workspace "AnyApp.xcodeproj/project.xcworkspace"
-scheme "AnyApp"
+workspace "TodoList.xcodeproj/project.xcworkspace"
+scheme "TodoList"
+device "iPhone 14"
 sdk "iphonesimulator"
-device "iPhone 11"
 code_coverage true
-xcargs '-parallelizeTargets'
-prelaunch_simulator true
+xcargs "-parallelizeTargets"
 derived_data_path "Build/"
+prelaunch_simulator true
