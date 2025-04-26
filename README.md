@@ -41,7 +41,7 @@ A simple and clean productivity app built with **SwiftUI + MVVM**, allowing user
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/hamidhosen42/ToDo-App.git
+   git clone https://github.com/hamidhosen42/Do-Stuff.git
 
 2. Open Do Stuff.xcodeproj in Xcode
 
