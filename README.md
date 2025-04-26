@@ -43,42 +43,44 @@ A simple and clean productivity app built with **SwiftUI + MVVM**, allowing user
    ```bash
    git clone https://github.com/hamidhosen42/ToDo-App.git
 
-2. Open TodoList.xcodeproj in Xcode
+2. Open Do Stuff.xcodeproj in Xcode
 
 3. Run on Simulator or device
 
 ## 🚀 Folder Structure
 
 ```
-TodoList/
+Do Stuff/
+├── 📁 AppImage/                          # App screenshots & logo
+│   ├── logo/                            # (Logo folder)
+│   ├── Add New Item screen.png
+│   ├── Empty Todo List screen.png
+│   ├── Launch Screen with Checkmark.png
+│   ├── List with Checked Tasks.png
+│   ├── Swipe to Delete.png
+│   └── Todo List (in edit mode).png
+
 ├── 📁 Assets.xcassets/
 │   ├── AppIcon.appiconset/
-│   └── LaunchImage.imageset/         # Optional if using custom launch logo
-│
+│   └── LaunchImage.imageset/           # Optional if using image-based launch
+
 ├── 📁 Models/
-│   └── ItemModel.swift               # Data structure for each todo item
-│
+│   └── ItemModel.swift                 # Data structure for each todo item
+
 ├── 📁 ViewModels/
-│   └── ListViewModel.swift           # Handles logic for todo list actions
-│
+│   └── ListViewModel.swift             # Manages list actions and item updates
+
 ├── 📁 Views/
-│   ├── ListView.swift                # Main screen showing the todo list
-│   ├── AddView.swift                 # View to add a new item
-│   ├── ListRowView.swift             # View for each individual item row
-│   └── LaunchScreen.storyboard       # (Optional) Launch screen if using storyboard
-│
-├── 📁 Screenshots/
-│   ├── launch_screen.png
-│   ├── screenshot_empty_list.png
-│   ├── screenshot_add_item.png
-│   ├── screenshot_edit_mode.png
-│   ├── screenshot_delete_item.png
-│   ├── screenshot_checked_items.png
-│
-├── Info.plist                        # App settings and launch screen config
-├── TodoListApp.swift                 # App entry point (@main)
-├── README.md                         # Project description and usage guide
-└── ItunesArtwork@2x.png              # App Store-style icon (optional)
+│   ├── ListView.swift                  # Main list screen
+│   ├── AddView.swift                   # View to add tasks
+│   ├── ListRowView.swift               # Each list item row
+│   └── LaunchScreen.storyboard         # Optional (used if not using SwiftUI launch screen)
+
+├── Info.plist                          # App settings, permissions, and launch config
+├── Do StuffApp.swift                   # App entry point with NavigationView
+├── README.md                           # GitHub project description
+└── ItunesArtwork@2x.png                # Optional marketing icon
+
 ```
 
 
